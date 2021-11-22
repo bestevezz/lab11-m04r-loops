@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gimmy My Number!</title>
+</head>
+
+<body>
+    <script>
+        var userString = prompt("Gimmy a number more than 100 plz")
+        var userNum = parseInt(userString, 10);
+
+        while (userNum <= 100) {
+            console.log(userNum + " is less than 100...try again...I've got all day.");
+            userString = prompt("Gimmy a number more than 100 plz")
+            userNum = parseInt(userString, 10)
+        }
+
+        console.log("Congrats! " + userNum + " is more than 100!")
+
+
+    </script>
+
+</body>
+
+</html>
