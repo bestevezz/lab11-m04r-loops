@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Which Floor?</title>
+</head>
+
+<body>
+    <script>
+        var userString = prompt("Which Floor do you work on?")
+        var userNum = parseInt(userString, 10);
+
+        while (userNum <= 60) {
+            console.log("You entered " + userNum + " but there are only 60 floors.");
+            userString = prompt("Which Floor do you work on?")
+            userNum = parseInt(userString, 10)
+        }
+
+        console.log("Dang! You really work on the " + userNum + " floor?")
+
+
+    </script>
+
+</body>
+
+</html>
