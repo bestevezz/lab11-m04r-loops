@@ -10,14 +10,15 @@
     <script>
         var userString = prompt("Which Floor do you work on?")
         var userNum = parseInt(userString, 10);
+        var max_floors = 60;
 
-        while (userNum <= 60) {
-            console.log("You entered " + userNum + " but there are only 60 floors.");
+        while (userNum >= max_floors) {
+            console.log("You entered " + userNum + " but there are only 60 floors. Do you actually work here??");
             userString = prompt("Which Floor do you work on?")
             userNum = parseInt(userString, 10)
         }
 
-        console.log("Dang! You really work on the " + userNum + " floor?")
+        console.log("Congrays!  " + userNum + " is definitely a floor I know! Great department! ")
 
 
     </script>
